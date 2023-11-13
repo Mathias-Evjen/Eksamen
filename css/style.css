@@ -3,7 +3,8 @@
 }
 
 @media (min-width: 801px) {
-    .menu {
+    /* Menu based on sample code for DATA1200: https://github.com/OsloMet-web/DATA1200code/tree/main */
+    .menu {                             
         background-color: #3A96A1;
         padding-top: 1rem;
         padding-bottom: 1rem;
@@ -18,9 +19,19 @@
     .menu > li {
         padding-right: 4rem;
     }
+    
+    .menu a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .active {
+        color: white;
+    }
 
     body {
-        background-color: #8B5F3E;
+        background-color: #C28255;
+        
     }
 
     main {
@@ -29,10 +40,27 @@
         margin-right: 10rem;
         margin-top: 0px;
     }
+
     .wrapper {
         display: grid;
-        grid-template-columns: ;
-        grid-template-rows: ;
+        grid-template-columns: 45vw 3rem auto;
+        grid-template-rows: minmax(100px, auto);
+    }
+
+    .text {
+        grid-column: 1 / 2;
+        grid-row: 1;
+        margin-left: 2rem;
+        margin-top: 2rem;
+    }
+
+    .image {
+        grid-column: 3 / 4;
+        grid-row: 1;
+        background-image: url(/img/P-35-scaled.webp);
+        background-size: cover;
+        width: minmax(auto, 50vw);
+        height: 20vw;
     }
 }
 
