@@ -5,8 +5,8 @@
 @media (min-width: 801px) {
     .menu {
         background-color: #3A96A1;
-        padding-top: 0.6rem;
-        padding-bottom: 0.6rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
         width: auto;
         display: flex;
         flex-direction: row;
@@ -27,10 +27,15 @@
         background-color: white;
         margin-left: 10rem;
         margin-right: 10rem;
+        margin-top: 0px;
     }
     .wrapper {
         display: grid;
         grid-template-columns: ;
         grid-template-rows: ;
     }
+}
+
+body {
+    margin: 0px;
 }
