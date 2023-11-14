@@ -8,6 +8,7 @@
         background-color: #3A96A1;
         padding-top: 1rem;
         padding-bottom: 1rem;
+        padding-left: 12vw;
         width: auto;
         display: flex;
         flex-direction: row;
@@ -19,6 +20,10 @@
 
     .menu > li {
         padding-right: 4rem;
+    }
+
+    .menu a:hover {
+        color: rgb(227, 227, 227);
     }
     
     .menu a {
@@ -37,8 +42,8 @@
 
     main {
         background-color: white;
-        margin-left: 10rem;
-        margin-right: 10rem;
+        margin-left: 11vw;
+        margin-right: 11vw;
         margin-top: 0px;
     }
 
@@ -108,4 +113,12 @@ body {
 
 h1 {
     font-size: 3rem;
+}
+
+p {
+    line-height: 2;
+}
+
+.sources {
+    font-size: 12px;
 }
