@@ -218,6 +218,9 @@
         font-size: 12px;
         padding-left: 0.6rem;
     }
+    #photographer-rødt-hus {
+        color: gray;
+    }
 
     .image-annas-spiseri{
         grid-column: 2 / 3;
@@ -232,10 +235,8 @@
         height: 20vw;
     }
     .image-rødt-hus{
-        grid-column: 2 / 3;
-        grid-row: 1;
         width: minmax(auto, 50vw);
-        height: 20vw;
+        height: 30vw;
     }
 }
 
