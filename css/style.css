@@ -235,6 +235,9 @@
         font-size: 12px;
         padding-left: 0.6rem;
     }
+    .image {
+        width: 100%;
+    }
     .image-rødt-hus{
         grid-column: 2 / 3;
         grid-row: 1;
