@@ -260,6 +260,8 @@
         grid-row: 1;
         width: minmax(auto, 50vw);
         height: 20vw;
+    }
+    
     #photographer-kaffelars {
         color: gray;
         font-size: 12px;
