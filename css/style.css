@@ -46,7 +46,7 @@
     .menu > li {
         display: flex;
         overflow: hidden;
-        background-color: #3A96A1;
+        background-color: #92d2d9;
     }
 
     #burger-toggle ~ .menu li{
@@ -63,7 +63,7 @@
     }
 
     .nav-container {
-        background-color: #3A96A1;
+        background-color: #92d2d9;
         padding-top: 0.4rem;
         padding-bottom: 0.4rem;
         width: auto;
