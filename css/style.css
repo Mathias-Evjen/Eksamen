@@ -66,15 +66,20 @@
         margin-left: 2rem;
         margin-right: 2rem;
     }
-    .text-left-row-1 {
-        grid-column: 1 / 6;
+    .text-heading-canteen {
+        grid-column: 1 / 9;
         grid-row: 1;
+        margin-left: 2rem;
+    }
+    .text-left-row-2 {
+        grid-column: 1 / 6;
+        grid-row: 2;
         margin-left: 2rem;
         margin-right: 2rem;
     }
-    .text-right-row-2 {
+    .text-right-row-3 {
         grid-column: 4 / 9;
-        grid-row: 2;
+        grid-row: 3;
         margin-left: 2rem;
         margin-right: 2rem;
     }
@@ -93,14 +98,19 @@
         width: minmax(auto, 50vw);
         height: 20vw;
     }
+    .image-right-row-2 {
+        grid-column: 6 / 9;
+        grid-row: 2;
+    }
+    .image-left-row-3 {
+        grid-column: 1 / 4;
+        grid-row: 3;
+    }
     .image-right {
         grid-column: 6 / 9;
         grid-row: 1;
     }
-    .image-left {
-        grid-column: 1 / 4;
-        grid-row: 2;
-    }
+
     .column2 {
         grid-column: 1 / 2;
         grid-row: 2;
@@ -108,6 +118,12 @@
     .column1 {
         grid-column: 6 / 8;
         grid-row: 1;
+    }
+
+    .border {
+        border-style: solid;
+        border-width: 2px;
+        grid-column: 1 / 9;
     }
 
     #image-p35 {
@@ -129,19 +145,6 @@
         color: gray;
         font-size: 12px;
         padding-left: 0.6rem;
-    }
-
-    .image-annas-spiseri{
-        grid-column: 2 / 3;
-        grid-row: 1;
-        width: minmax(auto, 50vw);
-        height: 20vw;
-    }
-    .image-olaf-spiseri{
-        grid-column: 1 / 2;
-        grid-row: 2;
-        width: minmax(auto, 50vw);
-        height: 20vw;
     }
 }
 
