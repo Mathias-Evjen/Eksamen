@@ -72,17 +72,24 @@
         margin-left: 2rem;
         margin-right: 2rem;
     }
-    .text-left-row-1 {
-        grid-column: 1 / 6;
+    .text-heading-canteen {
+        grid-column: 1 / 9;
         grid-row: 1;
         margin-left: 2rem;
-        margin-right: 2rem;
     }
-    .text-right-row-2 {
-        grid-column: 4 / 9;
+    .text-left-row-2 {
+        grid-column: 1 / 6;
         grid-row: 2;
         margin-left: 2rem;
         margin-right: 2rem;
+        margin-top: 3rem;
+    }
+    .text-right-row-3 {
+        grid-column: 4 / 9;
+        grid-row: 3;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-top: 5rem;
     }
     .text-2{
         grid-column: 4 / 8;
@@ -99,14 +106,21 @@
         width: minmax(auto, 50vw);
         height: 20vw;
     }
+    .image-right-row-2 {
+        grid-column: 6 / 9;
+        grid-row: 2;
+        margin-top: 3rem;
+    }
+    .image-left-row-3 {
+        grid-column: 1 / 4;
+        grid-row: 3;
+        margin-top: 5rem;
+    }
     .image-right {
         grid-column: 6 / 9;
         grid-row: 1;
     }
-    .image-left {
-        grid-column: 1 / 4;
-        grid-row: 2;
-    }
+
     .column2 {
         grid-column: 1 / 2;
         grid-row: 2;
@@ -116,9 +130,15 @@
         grid-row: 1;
     }
 
+    .box-opening-hours {
+        background-color: rgb(209, 233, 241);
+        padding-left: 10px;
+        border-radius: 15px;
+    }
+
     #image-p35 {
         max-width: 100%;
-        max-height: 80vh;
+        max-height: auto;
     }
 
     #photographer-homepage {
