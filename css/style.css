@@ -112,7 +112,7 @@
 
     #image-p35 {
         max-width: 100%;
-        max-height: 80vh;
+        max-height: auto;
     }
 
     #photographer-homepage {
