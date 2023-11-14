@@ -70,6 +70,33 @@
         height: 40px;
         display: flex;
     }
+
+    main {
+        margin-left: 2rem;
+    }
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: 90vw;
+        grid-template-rows: auto, auto;
+    }
+
+    #image-p35 {
+        grid-row: 1;
+        max-width: 100%;
+        max-height: auto;
+    }
+
+    #photographer-homepage {
+        color: gray;
+        font-size: 12px;
+        padding-left: 0.6rem;
+    }
+
+    .sources {
+        grid-row: 2;
+        font-size: 12px;
+    }
 }
 
 @media (min-width: 801px) {     /* Desktop view */ 
@@ -129,7 +156,7 @@
         margin-right: 2rem;
     }
     .text-homepage{
-        grid-column: 1 / 6;
+        grid-column: 1 / 4;
         grid-row: 1;
         margin-left: 2rem;
         margin-right: 2rem;
@@ -190,8 +217,8 @@
         grid-row: 4;
         margin-top: 5rem;
     }
-    .image-right {
-        grid-column: 6 / 9;
+    .image-right-homepage {
+        grid-column: 4 / 9;
         grid-row: 1;
     }
 
@@ -220,11 +247,13 @@
         font-size: 12px;
         padding-left: 0.6rem;
     }
+
     #photographer-annas-spiseri {
         color: gray;
         font-size: 12px;
         padding-left: 0.6rem;
     }
+
     #photographer-olaf-spiseri {
         color: gray;
         font-size: 12px;
@@ -264,10 +293,6 @@ h1 {
 
 p {
     line-height: 2;
-}
-
-.sources {
-    font-size: 12px;
 }
 
 .active {
