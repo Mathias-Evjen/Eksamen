@@ -273,6 +273,12 @@
         width: minmax(auto, 50vw);
         height: 30vw;
     }
+
+    .sources {
+        margin-left: 2rem;
+        grid-row: 2;
+        font-size: 12px;
+    }
 }
 
 body {
