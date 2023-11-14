@@ -259,6 +259,12 @@
         font-size: 12px;
         padding-left: 0.6rem;
     }
+
+    .sources {
+        margin-left: 2rem;
+        grid-row: 2;
+        font-size: 12px;
+    }
 }
 
 body {
