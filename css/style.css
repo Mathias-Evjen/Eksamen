@@ -259,6 +259,27 @@
         font-size: 12px;
         padding-left: 0.6rem;
     }
+    #photographer-rødt-hus {
+        color: gray;
+    }
+
+    .image-annas-spiseri{
+        grid-column: 2 / 3;
+        grid-row: 1;
+        width: minmax(auto, 50vw);
+        height: 20vw;
+    #photographer-kaffelars {
+        color: gray;
+        font-size: 12px;
+        padding-left: 0.6rem;
+    }
+    .image {
+        width: 100%;
+    }
+    .image-rødt-hus{
+        width: minmax(auto, 50vw);
+        height: 30vw;
+    }
 
     .sources {
         margin-left: 2rem;
