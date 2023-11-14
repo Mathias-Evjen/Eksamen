@@ -103,7 +103,7 @@
 
     /* Menu based on sample code for DATA1200: https://github.com/OsloMet-web/DATA1200code/tree/main */
     .menu {                             
-        background-color: #3A96A1;
+        background-color: #92d2d9;
         padding-top: 1rem;
         padding-bottom: 1rem;
         padding-left: 12vw;
@@ -125,7 +125,7 @@
     }
 
     body {
-        background-color: #C28255;
+        background-color: #c99e80;
         
     }
 
@@ -194,14 +194,6 @@
         margin-right: 2rem;
     }
 
-    .image {
-        grid-column: 2 / 3;
-        grid-row: 1;
-        background-image: url(/img/P-35-scaled.webp);
-        background-size: cover;
-        width: minmax(auto, 50vw);
-        height: 20vw;
-    }
     .image-right-row-2 {
         grid-column: 6 / 9;
         grid-row: 2;
@@ -268,6 +260,7 @@
         grid-row: 1;
         width: minmax(auto, 50vw);
         height: 20vw;
+    }
     #photographer-kaffelars {
         color: gray;
         font-size: 12px;
@@ -279,6 +272,12 @@
     .image-rødt-hus{
         width: minmax(auto, 50vw);
         height: 30vw;
+    }
+
+    .sources {
+        margin-left: 2rem;
+        grid-row: 2;
+        font-size: 12px;
     }
 }
 
