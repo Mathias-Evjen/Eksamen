@@ -58,7 +58,7 @@
     .menu > li {
         display: flex;
         overflow: hidden;
-        background-color: #b2d4da;
+        background-color: #92d2d9;
     }
 
     #burger-toggle ~ .menu li{
