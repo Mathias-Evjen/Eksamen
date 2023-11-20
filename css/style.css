@@ -94,6 +94,16 @@
         grid-row: 2;
     }
 
+    .image-left-accessibility > img {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+
+    .image-right-accessibility > img {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+
     /* Formating for sources */
     .sources {
         grid-row: 2;
@@ -224,7 +234,7 @@
 
     /* Text-box for the accessibility page */
     .text-accessibility {
-        grid-column: 1 / 6;
+        grid-column: 1 / 5;
         grid-row: 1;
         margin-left: 2rem;
         margin-right: 2rem;
@@ -289,40 +299,58 @@
         grid-row: 1;
     }
 
-    /* Box for the images on the accessibility page */
-    .image-column-accessibility {
-        grid-column: 6 / 9;
+    /* Box for the images on the left on the accessibility page */
+    .image-left-accessibility {
+        grid-column: 5 / 7;
         grid-row: 1;
+        margin-right: 1rem;
     }
 
-    .image-column-accessibility > p {
-        line-height: 0.1;
-        font-weight: bold;
+    /* Formating of the captions of accessibility images */
+    .image-left-accessibility > p {
         font-size: 0.9rem;
+        line-height: 1;
+        padding-bottom: 1.5rem;
     }
 
-    .image-column-accessibility > img {
+    /* Formating of the left column heading */
+    .image-left-accessibility > h2 {
+        padding-top: 2rem;
+        padding-bottom: 1.5rem;
+    }
+
+    /* Formating of accessibility images */
+    .image-left-accessibility > img {
         max-width: 100%;
         max-height: auto;
-        padding-top: 2.5rem;
+        border-radius: 10px;
     }
 
-    /* Box for the images on the accessibility page */
-    .image-column-accessibility {
-        grid-column: 6 / 9;
+    /* Box for the images on the right on the accessibility page */
+    .image-right-accessibility {
+        grid-column: 7 / 9;
         grid-row: 1;
+        margin-right: 1rem;
     }
 
-    .image-column-accessibility > p {
-        line-height: 0.1;
-        font-weight: bold;
+    /* Formating of the captions of accessibility images */
+    .image-right-accessibility > p {
         font-size: 0.9rem;
+        line-height: 1;
+        padding-bottom: 1.5rem;
     }
 
-    .image-column-accessibility > img {
+    /* Formating of the right column heading */
+    .image-right-accessibility > h2 {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    /* Formating of accessibility images */
+    .image-right-accessibility > img {
         max-width: 100%;
         max-height: auto;
-        padding-top: 2.5rem;
+        border-radius: 10px;
     }
 
     /*Box styling for Opening hours in the Canteen page*/
