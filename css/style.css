@@ -292,17 +292,18 @@
         padding-left: 10px;
         border-radius: 15px;
     }
-
-    #photographer-rødt-hus {
-        color: gray;
-    }
     
     .image-red-house {
         width: minmax(auto, 50vw);
         height: 30vw;
     }
 
-    .image-right-topical {
+    .image-right-topical1 {
+        grid-column: 6 / 9;
+        grid-row: 1;
+    }
+
+    .image-right-topical2 {
         grid-column: 6 / 9;
         grid-row: 1;
     }
@@ -394,6 +395,30 @@ footer{
 }
 /* Photo credit for the homepage image */
 #photographer-homepage {
+    color: gray;
+    font-size: 12px;
+    padding-left: 0.6rem;
+}
+
+#photographer-rødt-hus {
+    color: gray;
+    font-size: 12px;
+    padding-left: 0.6rem;
+}
+
+#photographer-accessibility {
+    color: gray;
+    font-size: 12px;
+    padding-left: 0.6rem;
+}
+
+#photographer-consequences {
+    color: gray;
+    font-size: 12px;
+    padding-left: 0.6rem;
+}
+
+#photographer-digitalization {
     color: gray;
     font-size: 12px;
     padding-left: 0.6rem;
