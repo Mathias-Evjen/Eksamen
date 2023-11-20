@@ -394,12 +394,14 @@ p {
 
 /* Colour of active page */
 .active {
+    text-shadow: 0 0 10px black, 0 0 10px black;
     color: rgb(255, 255, 255);
 }
 
 /* Colour of menu items when hovered over */
 .menu a:hover {
-    color: rgb(212, 212, 212);
+    text-shadow: 0 0 10px black, 0 0 10px black;
+    color: rgb(230, 230, 230);
 }
 
 /* Formating for the hyperlinks in the menu */

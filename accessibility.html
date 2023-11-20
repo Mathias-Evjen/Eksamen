@@ -16,10 +16,10 @@
                 </label>
 
                 <ul class="menu">
-                    <li><a href="index.html">Homepage</a></li>
+                    <li><a href="index.html" aria-label="Go to the hompage">Homepage</a></li>
                     <li class="active">Accessibility</li>
-                    <li><a href="topical.html">Topical</a></li>
-                    <li><a href="canteen.html">Canteen</a></li>
+                    <li><a href="topical.html" aria-label="Go to the topical page">Topical</a></li>
+                    <li><a href="canteen.html" aria-label="Go to the canteen page">Canteen</a></li>
                 </ul>
             </div>
         </nav>
@@ -46,15 +46,31 @@
                 For the accessibility tests we used the <a href="https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?pli=1">Lighthouse extention</a>
                 for Google Chrome, which provides automated tests that provide scores and specific feedback regarding the website's accessibility. 
             </p>
-            <h3>First test</h3>
+            <h3>Desktop view tests</h3>
             <p>
-                The first test showed that there was a lack of contrast in the navigation bar with the white text of the active page and the light blue background of the menu. 
+                The first tests all showed had one thing in common for all the website's pages: a lack of contrast in the navigation bar with the white text of the active 
+                page and the light blue background of the menu, making the name of the current page har to read. To address this, we wanted to add more contrast while 
+                still keeping the text of the active page white as the white text fit stylistically with our theme. In ordrer to do this, we decided on using a dark 
+                shadow behind the white text to add separation from the background without altering the style, making the text easier to read. The same was applied to 
+                hovering over a different page.
             </p>
+            <p>
+                Additionally, the accessibility test on the topcial page showed a "Names and labels" warning, stating that our a-elements lacked "discernible, unique, and 
+                focusable" text. This was due to a lack of "aria-labels" which contain a description of the hyperlink which is required for screen readers. Curiously,
+                this warning only showed up on the accessibility-test of the "topical" page, although that page is not the only one to include hyperlinks. The warning
+                was addressed by adding descriptions in "aria-labels" to the website's a-elements.
+            </p>
+            <p>
+                For the accessibility tests for desktop, there were no other highlighted warnings for our webiste.
+            </p>
+            <h3>Mobile view tests</h3>
+            <p></p>
         </div>
         <div class="image-column-accessibility">
             <img src="/img/contrast.PNG" alt="Contrast warning: 'Background and foreground colors do not have a sufficient contrast ratio'">
-            <p>Contrast warning</p>
-            
+            <p>Contrast warning: Desktop</p>
+            <img src="/img/names-and-labels.PNG" alt="Names and labels warning: 'Links do not have a discernible name'">
+            <p>Names and label warning: Desktop</p>
         </div>
     </main>
     <footer>
