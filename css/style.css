@@ -1,9 +1,21 @@
-@media (max-width: 800px) {     /* Mobile view */
+@media (max-width: 800px) {     /* ---Mobile view--- */
 
     /* Menu based on sample code for DATA1200: https://github.com/OsloMet-web/DATA1200code/tree/main */
-    .menu {
+
+    /* Container for the navigation menu */
+    .nav-container {
+        background-color: #92d2d9;
+        padding-top: 0.4rem;
+        padding-bottom: 0.4rem;
+        width: auto;
+        height: 40px;
         display: flex;
-        position: sticky;
+    }
+
+    /* Navigation bar menu, hidden until toggled */
+    .menu {
+        grid-row: 2;
+        display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: left;
@@ -15,7 +27,9 @@
         margin-bottom: 0px 
     }
 
+    /* Burger-menu icon */
     .menu-icon {
+        grid-row: 1;
         display: block;
         background-image: url(/img/burger-icon.png);  /* Menu-burger icon created by O.moonstd - Flaticon */
         background-size: cover;
@@ -24,6 +38,7 @@
         width: 40px;
     }
 
+    /* Container for the menu toggle */
     .hamburger-toggle-container {
         display: flex;
         flex-direction: column;
@@ -35,25 +50,24 @@
         align-items: left;
     }
 
+    /* Hides the check-box for the menu */
     #burger-toggle {
         display: none;
     }
 
-    #burger-toggle + .hamburger-toggle-container {
-        margin: 0px;
-    }
-
+    /* Formating for list-elements inside the menu */
     .menu > li {
         display: flex;
         overflow: hidden;
-        background-color: #b2d4da;
     }
 
+    /* Formating for list-elements inside the menu following the burger-toggle */
     #burger-toggle ~ .menu li{
         height: 0px;
         margin:  0px;
     }
 
+    /* Formating for list items when burger menu is toggled */
     #burger-toggle:checked ~ .menu li {
         height: 1rem;
         margin: 0px;
@@ -63,35 +77,16 @@
         font-size: 13.5px;
     }
 
-    .nav-container {
-        background-color: #b2d4da;
-        padding-top: 0.4rem;
-        padding-bottom: 0.4rem;
-        width: auto;
-        height: 40px;
-        display: flex;
-    }
-
+    /* Small margin for mobile view */
     main {
         margin-left: 2rem;
     }
 
+    /* Wrapper containing grid */
     .wrapper {
         display: grid;
         grid-template-columns: 85vw;
         grid-template-rows: auto, auto;
-    }
-
-    #image-p35 {
-        grid-row: 1;
-        max-width: 100%;
-        max-height: auto;
-    }
-
-    #photographer-homepage {
-        color: gray;
-        font-size: 12px;
-        padding-left: 0.6rem;
     }
 
     .image-right-topical {
@@ -99,35 +94,44 @@
         grid-row: 2;
     }
 
+    /* Formating for sources */
     .sources {
         grid-row: 2;
         font-size: 12px;
     }
+
     .text-heading-canteen {
         grid-row: 1;
         margin-left: 2rem;
     }
+
     .text-canteen-annas {
         grid-row: 2;
         margin-top: 2rem;
     }
+
     .text-canteen-olaf {
         grid-row: 4;
         margin-top: 4rem;
     }
+
     .text-canteen-kaffelars {
         grid-row: 6;
         margin-top: 4rem;
     }
+
     .image-canteen-annas {
         grid-row: 3;
     }
+
     .image-canteen-olaf {
         grid-row: 5;
     }
+
     .image-canteen-kaffelars {
         grid-row: 7;
     }
+
     .box-opening-hours {
         background-color: #b2d4da;
         padding-left: 10px;
@@ -135,9 +139,11 @@
     }
 }
 
-@media (min-width: 801px) {     /* Desktop view */ 
+@media (min-width: 801px) {     /* ---Desktop view--- */ 
 
     /* Menu based on sample code for DATA1200: https://github.com/OsloMet-web/DATA1200code/tree/main */
+
+    /* Navigation bar menu */
     .menu {                             
         background-color: #b2d4da;
         padding-top: 1rem;
@@ -152,31 +158,32 @@
         margin-bottom: 0px
     }
 
+    /* Padding for the listed items in the navigation bar */
     .menu > li {
         padding-right: 4rem;
     }
 
+    /* Hides the check-box */
     #burger-toggle {
         display: none;
     }
 
+    /* Background colour for the page */
     body {
         background-color: #c99e80;
         
     }
 
-    main {
-        background-color: white;
-        margin-left: 11vw;
-        margin-right: 11vw;
-        margin-top: 0px;
-    }
-
+    /* Wrapper containing grid */
     .wrapper {
         display: grid;
         gap: 6px;
         grid-template-columns: repeat(8, 1fr);
         grid-auto-rows: minmax(100px, auto);
+        background-color: white;
+        margin-left: 11vw;
+        margin-right: 11vw;
+        margin-top: 0px;
     }
 
     .text-topical { 
@@ -185,23 +192,36 @@
         margin-left: 2rem;
         margin-right: 2rem;
     }
+
     .text-topical-2 {
         grid-column: 1 / 6;
         grid-row: 2;
         margin-left: 2rem;
         margin-right: 2rem;
     }
-    .text-homepage{
+
+    /* Text-box for the accessibility page */
+    .text-accessibility {
+        grid-column: 1 / 6;
+        grid-row: 1;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    
+    /* Text-box for the homepage */
+    .text-homepage {
         grid-column: 1 / 5;
         grid-row: 1;
         margin-left: 2rem;
         margin-right: 2rem;
     }
+
     .text-heading-canteen {
         grid-column: 1 / 9;
         grid-row: 1;
         margin-left: 2rem;
     }
+
     .text-canteen-annas {
         grid-column: 1 / 6;
         grid-row: 2;
@@ -209,6 +229,7 @@
         margin-right: 2rem;
         margin-top: 2rem;
     }
+
     .text-canteen-olaf {
         grid-column: 4 / 9;
         grid-row: 3;
@@ -216,6 +237,7 @@
         margin-right: 2rem;
         margin-top: 4rem;
     }
+
     .text-canteen-kaffelars {
         grid-column: 1 / 6;
         grid-row: 4;
@@ -223,6 +245,7 @@
         margin-right: 2rem;
         margin-top: 4rem;
     }
+
     .text-2{
         grid-column: 4 / 8;
         grid-row: 2;
@@ -235,16 +258,20 @@
         grid-row: 2;
         margin-top: 3rem;
     }
+
     .image-canteen-olaf {
         grid-column: 1 / 4;
         grid-row: 3;
         margin-top: 5rem;
     }
+
     .image-canteen-kaffelars {
         grid-column: 6 / 9;
         grid-row: 4;
         margin-top: 5rem;
     }
+
+    /* Box for the image on the homepage */
     .image-right-homepage {
         grid-column: 5 / 9;
         grid-row: 1;
@@ -254,6 +281,7 @@
         grid-column: 1 / 2;
         grid-row: 2;
     }
+
     .column1 {
         grid-column: 6 / 8;
         grid-row: 1;
@@ -265,17 +293,6 @@
         border-radius: 15px;
     }
 
-    #image-p35 {
-        max-width: 100%;
-        max-height: auto;
-    }
-
-    #photographer-homepage {
-        color: gray;
-        font-size: 12px;
-        padding-left: 0.6rem;
-    }
-
     #photographer-rødt-hus {
         color: gray;
     }
@@ -284,11 +301,13 @@
         width: minmax(auto, 50vw);
         height: 30vw;
     }
+
     .image-right-topical {
         grid-column: 6 / 9;
         grid-row: 1;
     }
     
+    /* Formating of sources */
     .sources {
         margin-left: 2rem;
         grid-row: 2;
@@ -296,48 +315,62 @@
     }
 }
 
+/* ---Global CSS--- */
+
+/* Formating of body and font */
 body {
     margin: 0px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+/* Formating of h1-elements */
 h1 {
     font-size: 3rem;
 }
 
+/* Formating of p-elements */
 p {
     line-height: 2;
 }
 
+/* Colour of active page */
 .active {
     color: white;
 }
 
+/* Colour of menu items when hovered over */
 .menu a:hover {
     color: rgb(227, 227, 227);
 }
 
+/* Formating for the hyperlinks in the menu */
 .menu a {
     color: black;
     text-decoration: none;
 }
 
+/* Photo credit for Annas Spiseri */
 #photographer-annas-spiseri {
     color: gray;
     font-size: 12px;
     padding-left: 0.6rem;
 }
 
+/* Photo credit for Olaf Spiseri */
 #photographer-olaf-spiseri {
     color: gray;
     font-size: 12px;
     padding-left: 0.6rem;
 }
+
+/* Photo credit for Kaffelars Kaffebar */
 #photographer-kaffelars {
     color: gray;
     font-size: 12px;
     padding-left: 0.6rem;
 }
+
+/* Image-formating */
 .image {
     max-width: 100%;
     max-height: auto;
@@ -358,4 +391,10 @@ footer{
 }
 .footer-column-2 {
     grid-column: 2 / 3;
+}
+/* Photo credit for the homepage image */
+#photographer-homepage {
+    color: gray;
+    font-size: 12px;
+    padding-left: 0.6rem;
 }
