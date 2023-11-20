@@ -342,3 +342,20 @@ p {
     max-width: 100%;
     max-height: auto;
 }
+footer{
+    background-color: #b2d4da;
+    padding-top: 1rem;
+    padding-right: 12vw;
+    padding-left: 12vw;
+    padding-bottom: 1rem;
+    display: grid;
+    gap: 6px;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+.footer-column-1 {
+    grid-column: 1 / 2;
+}
+.footer-column-2 {
+    grid-column: 2 / 3;
+}
