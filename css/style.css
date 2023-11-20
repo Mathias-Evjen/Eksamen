@@ -4,7 +4,7 @@
 
     /* Container for the navigation menu */
     .nav-container {
-        background-color: #92d2d9;
+        background-color: #b2d4da;
         padding-top: 0.4rem;
         padding-bottom: 0.4rem;
         width: auto;
@@ -136,6 +136,24 @@
         background-color: #b2d4da;
         padding-left: 10px;
         border-radius: 15px;
+    }
+    footer{
+        background-color: #b2d4da;
+        padding-left: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-right: 2rem;
+        display: grid;
+        grid-template-columns: 85vw;
+        grid-template-rows: auto, auto;
+        row-gap: 30px;
+        
+    }
+    .footer-1st-content {
+        grid-row: 1;
+    }
+    .footer-2nd-content {
+        grid-row: 2;
     }
 }
 
@@ -313,6 +331,23 @@
         grid-row: 2;
         font-size: 12px;
     }
+    footer{
+        background-color: #b2d4da;
+        padding-top: 1rem;
+        padding-right: 12vw;
+        padding-left: 12vw;
+        padding-bottom: 1rem;
+        display: grid;
+        gap: 6px;
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+    .footer-1st-content {
+        grid-column: 1 / 2;
+    }
+    .footer-2nd-content {
+        grid-column: 2 / 3;
+    }
 }
 
 /* ---Global CSS--- */
@@ -374,23 +409,6 @@ p {
 .image {
     max-width: 100%;
     max-height: auto;
-}
-footer{
-    background-color: #b2d4da;
-    padding-top: 1rem;
-    padding-right: 12vw;
-    padding-left: 12vw;
-    padding-bottom: 1rem;
-    display: grid;
-    gap: 6px;
-    grid-template-columns: repeat(2, 1fr);
-    
-}
-.footer-column-1 {
-    grid-column: 1 / 2;
-}
-.footer-column-2 {
-    grid-column: 2 / 3;
 }
 /* Photo credit for the homepage image */
 #photographer-homepage {
