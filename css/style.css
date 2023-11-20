@@ -100,9 +100,9 @@
         font-size: 12px;
     }
 
+    /*Text-boxes for the Canteen page in mobile view*/
     .text-heading-canteen {
         grid-row: 1;
-        margin-left: 2rem;
     }
 
     .text-canteen-annas {
@@ -120,6 +120,7 @@
         margin-top: 4rem;
     }
 
+    /*Image placements in grid for Canteen page for Mobile view*/
     .image-canteen-annas {
         grid-row: 3;
     }
@@ -132,11 +133,14 @@
         grid-row: 7;
     }
 
+    /*Box styling for Opening hours in the Canteen page*/
     .box-opening-hours {
         background-color: #b2d4da;
         padding-left: 10px;
         border-radius: 15px;
     }
+
+    /*Footer formatting containing a grid*/
     footer{
         background-color: #b2d4da;
         padding-left: 2rem;
@@ -204,13 +208,13 @@
         margin-top: 0px;
     }
 
+    /*Text-boxes for the topical page*/
     .text-topical { 
         grid-column: 1 / 6;
         grid-row: 1;
         margin-left: 2rem;
         margin-right: 2rem;
     }
-
     .text-topical-2 {
         grid-column: 1 / 6;
         grid-row: 2;
@@ -234,12 +238,12 @@
         margin-right: 2rem;
     }
 
+    /*Text-boxes for the canteen page in Desktop view*/
     .text-heading-canteen {
         grid-column: 1 / 9;
         grid-row: 1;
         margin-left: 2rem;
     }
-
     .text-canteen-annas {
         grid-column: 1 / 6;
         grid-row: 2;
@@ -247,7 +251,6 @@
         margin-right: 2rem;
         margin-top: 2rem;
     }
-
     .text-canteen-olaf {
         grid-column: 4 / 9;
         grid-row: 3;
@@ -255,7 +258,6 @@
         margin-right: 2rem;
         margin-top: 4rem;
     }
-
     .text-canteen-kaffelars {
         grid-column: 1 / 6;
         grid-row: 4;
@@ -264,25 +266,17 @@
         margin-top: 4rem;
     }
 
-    .text-2{
-        grid-column: 4 / 8;
-        grid-row: 2;
-        margin-left: 2rem;
-        margin-right: 2rem;
-    }
-
+    /*Image placement for the Canteen page in Desktop view */
     .image-canteen-annas {
         grid-column: 6 / 9;
         grid-row: 2;
         margin-top: 3rem;
     }
-
     .image-canteen-olaf {
         grid-column: 1 / 4;
         grid-row: 3;
         margin-top: 5rem;
     }
-
     .image-canteen-kaffelars {
         grid-column: 6 / 9;
         grid-row: 4;
@@ -313,24 +307,29 @@
         padding-top: 2.5rem;
     }
 
-    .column2 {
-        grid-column: 1 / 2;
-        grid-row: 2;
-    }
-
-    .column1 {
-        grid-column: 6 / 8;
+    /* Box for the images on the accessibility page */
+    .image-column-accessibility {
+        grid-column: 6 / 9;
         grid-row: 1;
     }
 
+    .image-column-accessibility > p {
+        line-height: 0.1;
+        font-weight: bold;
+        font-size: 0.9rem;
+    }
+
+    .image-column-accessibility > img {
+        max-width: 100%;
+        max-height: auto;
+        padding-top: 2.5rem;
+    }
+
+    /*Box styling for Opening hours in the Canteen page*/
     .box-opening-hours {
         background-color: #b2d4da;
         padding-left: 10px;
         border-radius: 15px;
-    }
-
-    #photographer-rødt-hus {
-        color: gray;
     }
     
     .image-red-house {
@@ -338,7 +337,12 @@
         height: 30vw;
     }
 
-    .image-right-topical {
+    .image-right-topical1 {
+        grid-column: 6 / 9;
+        grid-row: 1;
+    }
+
+    .image-right-topical2 {
         grid-column: 6 / 9;
         grid-row: 1;
     }
@@ -349,6 +353,8 @@
         grid-row: 2;
         font-size: 12px;
     }
+
+    /*Footer formatting containing a grid*/
     footer{
         background-color: #b2d4da;
         padding-top: 1rem;
@@ -427,9 +433,34 @@ p {
 .image {
     max-width: 100%;
     max-height: auto;
+    border-radius: 10px;
 }
 /* Photo credit for the homepage image */
 #photographer-homepage {
+    color: gray;
+    font-size: 12px;
+    padding-left: 0.6rem;
+}
+
+#photographer-rødt-hus {
+    color: gray;
+    font-size: 12px;
+    padding-left: 0.6rem;
+}
+
+#photographer-accessibility {
+    color: gray;
+    font-size: 12px;
+    padding-left: 0.6rem;
+}
+
+#photographer-consequences {
+    color: gray;
+    font-size: 12px;
+    padding-left: 0.6rem;
+}
+
+#photographer-digitalization {
     color: gray;
     font-size: 12px;
     padding-left: 0.6rem;
