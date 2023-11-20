@@ -128,6 +128,11 @@
     .image-canteen-kaffelars {
         grid-row: 7;
     }
+    .box-opening-hours {
+        background-color: #b2d4da;
+        padding-left: 10px;
+        border-radius: 15px;
+    }
 }
 
 @media (min-width: 801px) {     /* Desktop view */ 
