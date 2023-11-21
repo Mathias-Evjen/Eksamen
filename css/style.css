@@ -79,10 +79,11 @@
         grid-template-rows: auto, auto;
     }
 
-    /* Formating for images on the topical page */ 
-    .image-right-topical {
-        max-width: 80vw;
-        grid-row: 2;
+    /*Wrapper for the topical page in mobile view*/
+    .wrapper-topical {
+        display: grid;
+        grid-template-columns: 85vw;
+        grid-template-rows: auto, auto;
     }
 
     /* Formating for images on the accessibility page */ 
@@ -107,17 +108,14 @@
     .text-heading-canteen {
         grid-row: 1;
     }
-
     .text-canteen-annas {
         grid-row: 2;
         margin-top: 2rem;
     }
-
     .text-canteen-olaf {
         grid-row: 4;
         margin-top: 4rem;
     }
-
     .text-canteen-kaffelars {
         grid-row: 6;
         margin-top: 4rem;
@@ -136,6 +134,13 @@
         grid-row: 7;
     }
 
+    /*Image size for topical images in mobile view*/
+    .image-topical{
+        width: 100%;
+        max-height: auto;
+        border-radius: 10px;
+    }
+    
     /*Box styling for Opening hours in the Canteen page*/
     .box-opening-hours {
         background-color: #b2d4da;
@@ -205,16 +210,18 @@
         margin-top: 0px;
     }
 
+    /*Wrapper for the topical page in desktop view*/
+    .wrapper-topical {
+        display: flex;
+        background-color: white;
+        margin-left: 11vw;
+        margin-right: 11vw;
+        margin-top: 0px;
+    }
+
     /*Text-boxes for the topical page*/
     .text-topical { 
-        grid-column: 1 / 6;
-        grid-row: 1;
-        margin-left: 2rem;
-        margin-right: 2rem;
-    }
-    .text-topical-2 {
-        grid-column: 1 / 6;
-        grid-row: 2;
+        text-align: justify;
         margin-left: 2rem;
         margin-right: 2rem;
     }
@@ -339,6 +346,20 @@
         max-height: auto;
         border-radius: 10px;
     }
+    
+    /*Formatting for topical images in desktop view*/
+    .image-right-topical1 {
+        float: right;
+        margin-left: 15px;
+    }
+    .image-right-topical2 {
+        float: left;
+        margin-right: 15px;
+    }
+    .image-topical {
+        width: 20vw;
+        max-height: auto;
+    }
 
     /*Box styling for Opening hours in the Canteen page*/
     .box-opening-hours {
@@ -347,15 +368,6 @@
         border-radius: 15px;
     }
 
-    .image-right-topical1 {
-        grid-column: 6 / 9;
-        grid-row: 1;
-    }
-
-    .image-right-topical2 {
-        grid-column: 6 / 9;
-        grid-row: 1;
-    }
     
     /* Formating of sources */
     .sources {
