@@ -193,7 +193,7 @@
     body {
         background-color: #c99e80;
     }
-
+    
     /* Wrapper containing grid */
     .wrapper {
         display: grid;
@@ -205,7 +205,9 @@
         margin-right: 11vw;
         margin-top: 0px;
     }
+    
 
+/*Text wrap around images inthe topical page: https://www.geeksforgeeks.org/how-to-wrap-the-text-around-an-image-using-html-and-css/*/
     /*Wrapper for the topical page in desktop view*/
     .wrapper-topical {
         display: flex;
@@ -214,14 +216,26 @@
         margin-right: 11vw;
         margin-top: 0px;
     }
-
     /*Text-boxes for the topical page*/
     .text-topical { 
         text-align: justify;
         margin-left: 2rem;
         margin-right: 2rem;
     }
-
+    /*Formatting for topical images in desktop view*/
+    .image-right-topical1 {
+        float: right;
+        margin-left: 15px;
+    }
+    .image-right-topical2 {
+        float: left;
+        margin-right: 15px;
+    }
+    .image-topical {
+        width: 20vw;
+        max-height: auto;
+    }
+    
     /* Text-box for the accessibility page */
     .text-accessibility {
         grid-column: 1 / 5;
@@ -326,19 +340,6 @@
         border-radius: 10px;
     }
     
-    /*Formatting for topical images in desktop view*/
-    .image-right-topical1 {
-        float: right;
-        margin-left: 15px;
-    }
-    .image-right-topical2 {
-        float: left;
-        margin-right: 15px;
-    }
-    .image-topical {
-        width: 20vw;
-        max-height: auto;
-    }
 
     /*Box styling for Opening hours in the Canteen page*/
     .box-opening-hours {
