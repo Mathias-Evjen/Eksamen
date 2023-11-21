@@ -313,20 +313,20 @@
         margin-right: 1rem;
     }
 
-    /* Formating of the captions of accessibility images */
+    /* Formating of the captions of accessibility test images in both columns */
     .image-left-accessibility > p, .image-right-accessibility > p {
         font-size: 0.9rem;
         line-height: 1;
         padding-bottom: 1.5rem;
     }
 
-    /* Formating of the left column heading */
+    /* Formating of the left column heading in both image columns of accessibility page */
     .image-left-accessibility > h2, .image-right-accessibility > h2 {
         padding-top: 6.1rem;
         padding-bottom: 1.5rem;
     }
 
-    /* Formating of accessibility images */
+    /* Formating of accessibility images in both columns in accessibility page */
     .image-left-accessibility > img, .image-right-accessibility > img {
         max-width: 100%;
         max-height: auto;
