@@ -26,9 +26,8 @@
     /* Burger-menu icon */
     .menu-icon {
         display: block;
-        background-image: url("/img/burger-icon.png");  /* Menu-burger icon created by O.moonstd - Flaticon */
+        background-image: url("../img/burger-icon.png");  /* Menu-burger icon created by O.moonstd - Flaticon */
         background-size: cover;
-        position: sticky;
         height: 40px;
         width: 40px;
     }
