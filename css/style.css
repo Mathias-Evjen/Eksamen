@@ -190,7 +190,7 @@
         background-color: #c99e80;
     }
     
-    /* Wrapper containing grid */
+    /* Wrapper grid based on sample code for DATA1200 Flowerfarm: https://github.com/OsloMet-web/DATA1200code/tree/main/flowerfarm */
     .wrapper {
         display: grid;
         gap: 6px;
