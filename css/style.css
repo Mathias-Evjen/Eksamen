@@ -87,7 +87,7 @@
     }
 
     /* Formating for images on the accessibility page */ 
-    .image-left-accessibility, .image-right-accessibility > img {
+    .image-left-accessibility > img, .image-right-accessibility > img {
         max-width: 100%;
         border-radius: 10px;
     }
