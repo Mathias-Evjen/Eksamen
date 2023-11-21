@@ -1,4 +1,4 @@
-@media (max-width: 800px) {     /* ---Mobile view--- */
+@media (max-width: 800px) {     /** ---Mobile view--- **/
 
     /* Menu based on sample code for DATA1200: https://github.com/OsloMet-web/DATA1200code/tree/main */
 
@@ -86,13 +86,7 @@
     }
 
     /* Formating for images on the accessibility page */ 
-    .image-left-accessibility > img {
-        max-width: 100%;
-        border-radius: 10px;
-    }
-
-    /* Formating for images on the accessibility page */ 
-    .image-right-accessibility > img {
+    .image-left-accessibility, .image-right-accessibility > img {
         max-width: 100%;
         border-radius: 10px;
     }
@@ -156,15 +150,17 @@
         row-gap: 30px;
         
     }
+
     .footer-1st-content {
         grid-row: 1;
     }
+
     .footer-2nd-content {
         grid-row: 2;
     }
 }
 
-@media (min-width: 801px) {     /* ---Desktop view--- */ 
+@media (min-width: 801px) {     /** ---Desktop view--- **/ 
 
     /* Menu based on sample code for DATA1200: https://github.com/OsloMet-web/DATA1200code/tree/main */
 
@@ -212,6 +208,7 @@
         margin-left: 2rem;
         margin-right: 2rem;
     }
+    
     .text-topical-2 {
         grid-column: 1 / 6;
         grid-row: 2;
@@ -241,6 +238,7 @@
         grid-row: 1;
         margin-left: 2rem;
     }
+
     .text-canteen-annas {
         grid-column: 1 / 6;
         grid-row: 2;
@@ -248,6 +246,7 @@
         margin-right: 2rem;
         margin-top: 2rem;
     }
+
     .text-canteen-olaf {
         grid-column: 4 / 9;
         grid-row: 3;
@@ -255,6 +254,7 @@
         margin-right: 2rem;
         margin-top: 4rem;
     }
+
     .text-canteen-kaffelars {
         grid-column: 1 / 6;
         grid-row: 4;
@@ -293,26 +293,6 @@
         margin-right: 1rem;
     }
 
-    /* Formating of the captions of accessibility images */
-    .image-left-accessibility > p {
-        font-size: 0.9rem;
-        line-height: 1;
-        padding-bottom: 1.5rem;
-    }
-
-    /* Formating of the left column heading */
-    .image-left-accessibility > h2 {
-        padding-top: 6.1rem;
-        padding-bottom: 1.5rem;
-    }
-
-    /* Formating of accessibility images */
-    .image-left-accessibility > img {
-        max-width: 100%;
-        max-height: auto;
-        border-radius: 10px;
-    }
-
     /* Box for the images on the right on the accessibility page */
     .image-right-accessibility {
         grid-column: 7 / 9;
@@ -321,20 +301,20 @@
     }
 
     /* Formating of the captions of accessibility images */
-    .image-right-accessibility > p {
+    .image-left-accessibility > p, .image-right-accessibility > p {
         font-size: 0.9rem;
         line-height: 1;
         padding-bottom: 1.5rem;
     }
 
-    /* Formating of the right column heading */
-    .image-right-accessibility > h2 {
+    /* Formating of the left column heading */
+    .image-left-accessibility > h2, .image-right-accessibility > h2 {
         padding-top: 6.1rem;
         padding-bottom: 1.5rem;
     }
 
     /* Formating of accessibility images */
-    .image-right-accessibility > img {
+    .image-left-accessibility > img, .image-right-accessibility > img {
         max-width: 100%;
         max-height: auto;
         border-radius: 10px;
@@ -384,7 +364,7 @@
     }
 }
 
-/* ---Global CSS--- */
+/** ---Global CSS--- **/
 
 /* Formating of body and font */
 body {
@@ -420,10 +400,10 @@ p {
     text-decoration: none;
 }
 
-    /* Hides the check-box */
-    #burger-toggle {
-        display: none;
-    }
+/* Hides the check-box */
+#burger-toggle {
+    display: none;
+}
 
 /* Photo credit for Annas Spiseri */
 #photographer-annas-spiseri {
