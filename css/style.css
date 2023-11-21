@@ -346,11 +346,6 @@
         padding-left: 10px;
         border-radius: 15px;
     }
-    
-    .image-red-house {
-        width: minmax(auto, 50vw);
-        height: 30vw;
-    }
 
     .image-right-topical1 {
         grid-column: 6 / 9;
@@ -465,24 +460,28 @@ p {
     padding-left: 0.6rem;
 }
 
+/* Photo credit for for det picture of the red house on topical page */
 #photographer-rødt-hus {
     color: gray;
     font-size: 12px;
     padding-left: 0.6rem;
 }
 
+/* Photo credit for for det picture about accessibility on topical page */
 #photographer-accessibility {
     color: gray;
     font-size: 12px;
     padding-left: 0.6rem;
 }
 
+/* Photo credit for for det picture about consequences on topical page */
 #photographer-consequences {
     color: gray;
     font-size: 12px;
     padding-left: 0.6rem;
 }
 
+/* Photo credit for for det picture about digitalization on topical page */
 #photographer-digitalization {
     color: gray;
     font-size: 12px;
