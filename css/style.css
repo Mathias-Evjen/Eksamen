@@ -135,6 +135,11 @@
         border-radius: 10px;
     }
     
+    /*Logo size for link to github page*/
+    .image-logo-link {
+        width: 4rem;
+    }
+
     /*Box styling for Opening hours in the Canteen page*/
     .box-opening-hours {
         background-color: #b2d4da;
@@ -149,19 +154,10 @@
         padding-top: 1rem;
         padding-bottom: 1rem;
         padding-right: 2rem;
-        display: grid;
-        grid-template-columns: 85vw;
-        grid-template-rows: auto, auto;
-        row-gap: 30px;
-        
+        display: flex;
     }
-
     .footer-1st-content {
-        grid-row: 1;
-    }
-
-    .footer-2nd-content {
-        grid-row: 2;
+        margin-right: 20px;
     }
 }
 
@@ -258,7 +254,6 @@
         grid-row: 1;
         margin-left: 2rem;
     }
-
     .text-canteen-annas {
         grid-column: 1 / 6;
         grid-row: 2;
@@ -266,7 +261,6 @@
         margin-right: 2rem;
         margin-top: 2rem;
     }
-
     .text-canteen-olaf {
         grid-column: 4 / 9;
         grid-row: 3;
@@ -274,7 +268,6 @@
         margin-right: 2rem;
         margin-top: 4rem;
     }
-
     .text-canteen-kaffelars {
         grid-column: 1 / 6;
         grid-row: 4;
@@ -340,6 +333,11 @@
         border-radius: 10px;
     }
 
+    /*Logo size for link to github page*/
+    .image-logo-link {
+        width: 4rem;
+    }
+
     /*Box styling for Opening hours in the Canteen page*/
     .box-opening-hours {
         background-color: #b2d4da;
@@ -363,8 +361,7 @@
         padding-bottom: 1rem;
         display: grid;
         gap: 6px;
-        grid-template-columns: repeat(2, 1fr);
-        
+        grid-template-columns: repeat(2, 1fr);   
     }
     .footer-1st-content {
         grid-column: 1 / 2;
